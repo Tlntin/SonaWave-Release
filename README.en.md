@@ -96,13 +96,67 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ## Features
 
-- **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB, Baidu Netdisk and local folders, with multiple sources at once
-- **Playback**: lossless, DSD (dsf / dff), CUE sheets; equalizer; exclusive output on Windows; play while caching and offline downloads
-- **Lyrics**: synced and word-by-word lyrics; desktop lyrics on PC
-- **Discovery**: recommendations based on what you like, shuffle radio, recently / most played stats; internet radio
-- **Library**: favorites and playlists, M3U / TXT playlist import and export
+- **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB (Windows), Baidu Netdisk and local folders, with multiple sources at once
+- **Playback**: lossless and CUE sheets, DSD (dsf / dff) in the Windows Full build; equalizer; exclusive output on Windows; play while caching and offline downloads
+- **Lyrics**: synced and word-by-word lyrics, translation; desktop lyrics on PC
+- **Discovery**: recommendations based on what you like, search suggestions, listening stats; internet radio
+- **Library**: favorites and playlists, M3U / TXT playlist import
 - **Every screen**: adaptive layouts for phone, tablet and desktop; remote-control navigation on Android TV and car units; system media controls (Windows media overlay, Android notification / lock screen / Bluetooth)
 - English, Simplified Chinese and Traditional Chinese, with a dark mode
+
+## Feature comparison
+
+✅ supported · 🚧 partial · ❌ not yet · — not applicable. The HarmonyOS app is on Huawei AppGallery; the other three columns are the Android / Windows builds released here.
+
+| Sources | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
+|---|:-:|:-:|:-:|:-:|
+| Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ |
+| fnOS Music | ✅ | 🚧 no transcoding or folders | 🚧 same | 🚧 same |
+| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks play as albums; no podcasts | 🚧 same | 🚧 same |
+| WebDAV, Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ |
+| SMB | ✅ | ❌ | ❌ | ✅ |
+| Huawei Drive | ✅ | — | — | — |
+| Multiple servers, address auto-switch, library sync | ✅ | ✅ | ✅ | ✅ |
+| Multiple music libraries per server | ✅ | ❌ | ❌ | ❌ |
+
+| Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
+|---|:-:|:-:|:-:|:-:|
+| Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ |
+| DSD (dsf / dff) | ✅ | not verified | not verified | ✅ Full build |
+| Exclusive output | ✅ USB DAC | ❌ | ❌ | ✅ WASAPI |
+| Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ |
+| Server-side transcoding | ✅ | 🚧 not for fnOS | 🚧 same | 🚧 same |
+| Playback speed | ✅ audiobook mode | ❌ | ❌ | ❌ |
+| Internet radio | ✅ | ✅ | 🚧 no file import / export | ✅ |
+
+| Lyrics | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
+|---|:-:|:-:|:-:|:-:|
+| Synced & word-by-word lyrics, translation, editing | ✅ | ✅ | ✅ | ✅ |
+| Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same |
+| Desktop / floating lyrics | ✅ | ❌ | ❌ | ✅ |
+| Car Bluetooth lyrics | ✅ | ❌ | ❌ | — |
+
+| Library & playlists | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
+|---|:-:|:-:|:-:|:-:|
+| Smart home page, search suggestions, favorites, multi-select, listening stats | ✅ | ✅ | ✅ | ✅ |
+| Folder browsing | ✅ | 🚧 not for fnOS / Audiobookshelf | 🚧 same | 🚧 same |
+| Folder management (create / rename / move / delete) | ✅ | ❌ | ❌ | ❌ |
+| Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same, no import | 🚧 server sources only |
+| Playlists: rename, reorder, remove songs, export | ✅ | ❌ | ❌ | ❌ |
+| Tag editing | ✅ | 🚧 Emby / Jellyfin / fnOS only | 🚧 same | 🚧 same |
+| Metadata fill, similar songs, queue history, sharing | ✅ | ❌ | ❌ | ❌ |
+| Audiobook mode (bookshelf, resume, speed), book store | ✅ | ❌ | ❌ | ❌ |
+
+| System & account | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
+|---|:-:|:-:|:-:|:-:|
+| System media controls (notification / lock screen / headset keys / media overlay) | ✅ | ✅ | ✅ | ✅ |
+| Cross-device continuation, casting | ✅ | ❌ | ❌ | ❌ |
+| Remote-control navigation | — | — | ✅ | — |
+| Tray, shortcuts, drag-and-drop, open with | — | — | — | ✅ |
+| Sign-in | ✅ Huawei ID | ✅ email / QR | ✅ email / QR | ✅ email / QR |
+| Membership (shared across platforms) | ✅ Huawei IAP | ✅ Alipay | ✅ Alipay | ✅ Alipay |
+| Themes, accent colors, dark mode, 3 languages | ✅ | ✅ | ✅ | ✅ |
+| Export / import settings | ✅ | ✅ | 🚧 no file picker yet | ✅ |
 
 ## Feedback
 
