@@ -111,7 +111,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Sources | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
 |---|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ |
-| fnOS Music | ✅ | 🚧 no transcoding or folders | 🚧 same | 🚧 same |
+| fnOS Music | ✅ | 🚧 transcoding and folders in progress | 🚧 same | 🚧 same |
 | Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks play as albums; no podcasts | 🚧 same | 🚧 same |
 | WebDAV, Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ |
 | SMB | ✅ | ❌ | ❌ | ✅ |
@@ -140,6 +140,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 |---|:-:|:-:|:-:|:-:|
 | Smart home page, search suggestions, favorites, multi-select, listening stats | ✅ | ✅ | ✅ | ✅ |
 | Folder browsing | ✅ | 🚧 not for fnOS / Audiobookshelf | 🚧 same | 🚧 same |
+| Playlist from a folder (add a whole folder to a playlist / favorites / queue) | ✅ | 🚧 not for fnOS / Audiobookshelf; playlists only on server sources | 🚧 same | 🚧 same |
 | Folder management (create / rename / move / delete) | ✅ | ❌ | ❌ | ❌ |
 | Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same; import needs a file manager on the device | 🚧 server sources only |
 | Playlists: rename, reorder, remove songs, export | ✅ | ❌ | ❌ | ❌ |
