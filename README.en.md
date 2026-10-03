@@ -127,7 +127,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ |
 | Server-side transcoding | ✅ | 🚧 not for fnOS | 🚧 same | 🚧 same |
 | Playback speed | ✅ audiobook mode | ❌ | ❌ | ❌ |
-| Internet radio | ✅ | ✅ | 🚧 no file import / export | ✅ |
+| Internet radio | ✅ | ✅ | 🚧 file import / export needs a file manager on the device | ✅ |
 
 | Lyrics | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
 |---|:-:|:-:|:-:|:-:|
@@ -141,7 +141,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Smart home page, search suggestions, favorites, multi-select, listening stats | ✅ | ✅ | ✅ | ✅ |
 | Folder browsing | ✅ | 🚧 not for fnOS / Audiobookshelf | 🚧 same | 🚧 same |
 | Folder management (create / rename / move / delete) | ✅ | ❌ | ❌ | ❌ |
-| Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same, no import | 🚧 server sources only |
+| Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same; import needs a file manager on the device | 🚧 server sources only |
 | Playlists: rename, reorder, remove songs, export | ✅ | ❌ | ❌ | ❌ |
 | Tag editing | ✅ | 🚧 Emby / Jellyfin / fnOS only | 🚧 same | 🚧 same |
 | Metadata fill, similar songs, queue history, sharing | ✅ | ❌ | ❌ | ❌ |
@@ -156,7 +156,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Sign-in | ✅ Huawei ID | ✅ email / QR | ✅ email / QR | ✅ email / QR |
 | Membership (shared across platforms) | ✅ Huawei IAP | ✅ Alipay | ✅ Alipay | ✅ Alipay |
 | Themes, accent colors, dark mode, 3 languages | ✅ | ✅ | ✅ | ✅ |
-| Export / import settings | ✅ | ✅ | 🚧 no file picker yet | ✅ |
+| Export / import settings | ✅ | ✅ | 🚧 needs a file manager on the device | ✅ |
 
 ## Feedback
 
