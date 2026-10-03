@@ -69,7 +69,6 @@ Older Huawei / Honor devices on HarmonyOS 2–4 can install the APK too. On Harm
 |---|---|
 | `…-windows-x64-full-setup.exe` | **Recommended.** Full playback engine with the best support for DSD, the equalizer and network streams |
 | `…-windows-x64-lite-setup.exe` | Less than half the size; plays all common formats, but a few rare formats and network streams work better in the full build |
-| `…-windows-x64-full.zip` / `…-lite.zip` | Portable build: unzip and run `sonawave.exe` |
 
 The installer installs for the current user and does not need administrator rights. Install a new version over the old one to upgrade; settings and libraries are kept.
 

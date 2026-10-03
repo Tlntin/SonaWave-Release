@@ -69,7 +69,6 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · HarmonyOS
 |---|---|
 | `…-windows-x64-full-setup.exe` | **推荐**。完整版播放内核：DSD、均衡器、网络流兼容性最好 |
 | `…-windows-x64-lite-setup.exe` | 精简版，体积不到完整版的一半，常见格式都能放；少数冷门格式和网络流的兼容性不如完整版 |
-| `…-windows-x64-full.zip` / `…-lite.zip` | 免安装版，解压后直接运行 `sonawave.exe` |
 
 安装包装到当前用户目录，不需要管理员权限；覆盖安装即可升级，设置和曲库都会保留。
 
