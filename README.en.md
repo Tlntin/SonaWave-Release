@@ -122,7 +122,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
 |---|:-:|:-:|:-:|:-:|
 | Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ |
-| DSD (dsf / dff) | ✅ | not verified | not verified | ✅ Full build |
+| DSD (dsf / dff) | ✅ experimental | not verified | not verified | ✅ Full build |
 | Exclusive output | ✅ USB DAC | ❌ | ❌ | ✅ WASAPI |
 | Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ |
 | Server-side transcoding | ✅ | 🚧 not for fnOS | 🚧 same | 🚧 same |
