@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用文档 / Docs
+    url: https://music.http5.cn/docs/quickly_start.html
+    about: 连接服务器、常见问题先看这里 / Setup guides and FAQ
+  - name: 官网 / Website
+    url: https://music.http5.cn/
+    about: 下载、更新日志 / Downloads and changelog

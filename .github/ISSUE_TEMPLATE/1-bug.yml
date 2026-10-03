@@ -1,0 +1,134 @@
+name: 问题反馈 / Bug report
+description: 播放、连接、界面等出了问题 / Something isn't working
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！提交前请先搜一下已有的 Issue，看看是不是已经有人提过。
+        Thanks for the report! Please search existing issues first.
+
+        **请不要贴服务器地址、账号密码或令牌。** 需要调试日志时，按 README 里「附上调试日志」的办法发邮件。
+        **Never post server addresses, passwords or tokens.** If a debug log is needed, email it as described in the README.
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: 客户端平台 / Platform
+      description: 可多选 / Select all that apply
+      options:
+        - label: 安卓手机 / Android phone
+        - label: 安卓平板 / Android tablet
+        - label: 安卓电视、盒子 / Android TV, TV box
+        - label: 车机 / Car head unit
+        - label: Windows
+        - label: 鸿蒙 / HarmonyOS
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 设备与系统版本 / Device and OS version
+      placeholder: 例如 小米 14 · Android 15、Windows 11、当贝盒子 B1 / e.g. Pixel 8 · Android 15, Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 听澜盒版本 / SonaWave version
+      description: 在「我的 → 关于」里查看 / Me → About
+      placeholder: 例如 0.1.0 / e.g. 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows-build
+    attributes:
+      label: Windows 安装包 / Windows build
+      description: 只有 Windows 需要选 / Windows only
+      options:
+        - 不适用 / Not Windows
+        - 完整版 / Full
+        - 精简版 / Lite
+        - 不确定 / Not sure
+      default: 0
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: sources
+    attributes:
+      label: 音乐源 / Music source
+      description: 出问题时用的是哪种，可多选 / Which source(s) were you using
+      options:
+        - label: Navidrome
+        - label: Subsonic 兼容（如 music-tag-web）/ Subsonic-compatible
+        - label: Emby
+        - label: Jellyfin
+        - label: 飞牛音乐 / fnOS Music
+        - label: Audiobookshelf
+        - label: WebDAV
+        - label: SMB
+        - label: 百度网盘 / Baidu Netdisk
+        - label: 本地音乐 / Local music
+        - label: 华为云空间（鸿蒙）/ Huawei Drive (HarmonyOS)
+        - label: 和音乐源无关 / Not related to a source
+    validations:
+      required: true
+
+  - type: input
+    id: server-version
+    attributes:
+      label: 服务端版本 / Server version
+      description: 选填 / Optional
+      placeholder: 例如 Navidrome 0.58.0、Jellyfin 10.11 / e.g. Navidrome 0.58.0, Jellyfin 10.11
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / What happened
+      placeholder: 简要说明遇到的问题 / A clear description of the problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望的结果 / Expected behavior
+      description: 选填 / Optional
+    validations:
+      required: false
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 截图、录屏 / Screenshots or recordings
+      description: 选填，可以直接拖进来；截图前请遮住服务器地址 / Optional, drag files in; hide server addresses first
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认 / Confirm
+      options:
+        - label: 我搜过已有的 Issue，没有重复 / I searched existing issues
+          required: true
+        - label: 我没有贴服务器地址、账号密码或令牌 / I did not post server addresses, passwords or tokens
+          required: true
