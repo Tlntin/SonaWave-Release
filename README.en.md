@@ -6,7 +6,7 @@
 
 A music player for the library you already own: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf, WebDAV, SMB, Baidu Netdisk and local files.
 
-Android (phone / tablet / TV / car) · Windows · HarmonyOS
+Android (phone / tablet / TV / car) · Windows · Linux · HarmonyOS
 
 [简体中文](README.md) | English
 
@@ -72,7 +72,14 @@ Older Huawei / Honor devices on HarmonyOS 2–4 can install the APK too. On Harm
 
 The installer installs for the current user and does not need administrator rights. Install a new version over the old one to upgrade; settings and libraries are kept.
 
-**Linux / macOS / iOS**: not available yet.
+**Linux (x86_64, glibc 2.35 or later: Ubuntu 22.04+, Debian 12+, Fedora 36+ and similar)**
+
+| File | Notes |
+|---|---|
+| `SonaWave-<version>-linux-x86_64.AppImage` | **Recommended.** The playback engine (libmpv) and a CJK font are bundled; `chmod +x` it and run, nothing else to install |
+| `SonaWave-<version>-linux-amd64.deb` | Debian / Ubuntu. `sudo apt install ./SonaWave-<version>-linux-amd64.deb`; apt installs the system libmpv automatically |
+
+**macOS**: planned (Intel / Apple silicon). **iOS**: not available yet.
 
 ### Verify your download
 
@@ -96,7 +103,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ## Features
 
-- **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB (Windows), Baidu Netdisk and local folders, with multiple sources at once
+- **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB, Baidu Netdisk and local folders, with multiple sources at once
 - **Playback**: lossless and CUE sheets, DSD (dsf / dff) in the Windows Full build; equalizer; exclusive output on Windows; play while caching and offline downloads
 - **Lyrics**: synced and word-by-word lyrics, translation; desktop lyrics on PC
 - **Discovery**: recommendations based on what you like, search suggestions, listening stats; internet radio
@@ -106,58 +113,61 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ## Feature comparison
 
-✅ supported · 🚧 partial · ❌ not yet · — not applicable. The HarmonyOS app is on Huawei AppGallery; the other three columns are the Android / Windows builds released here.
+✅ supported · 🚧 partial · ❌ not yet · — not applicable. The HarmonyOS app is on Huawei AppGallery; the other columns are the Android / Windows / Linux builds released here.
 
-| Sources | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
-|---|:-:|:-:|:-:|:-:|
-| Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ |
-| fnOS Music | ✅ | 🚧 transcoding and folders in progress | 🚧 same | 🚧 same |
-| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks play as albums; no podcasts | 🚧 same | 🚧 same |
-| WebDAV, Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ |
-| SMB | ✅ | ❌ | ❌ | ✅ |
-| Huawei Drive | ✅ | — | — | — |
-| Multiple servers, address auto-switch, library sync | ✅ | ✅ | ✅ | ✅ |
-| Multiple music libraries per server | ✅ | ❌ | ❌ | ❌ |
+| Sources | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ |
+| fnOS Music | ✅ | 🚧 transcoding in progress | 🚧 same | 🚧 same | 🚧 same |
+| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks play as albums; no podcasts | 🚧 same | 🚧 same | 🚧 same |
+| WebDAV, SMB, Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Huawei Drive | ✅ | — | — | — | — |
+| Multiple servers, address auto-switch, library sync | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Switching servers saves progress and resumes when you switch back | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Multiple music libraries per server | ✅ | ❌ | ❌ | ❌ | ❌ |
 
-| Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
-|---|:-:|:-:|:-:|:-:|
-| Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ |
-| DSD (dsf / dff) | ✅ experimental | not verified | not verified | ✅ Full build |
-| Exclusive output | ✅ USB DAC | ❌ | ❌ | ✅ WASAPI |
-| Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ |
-| Server-side transcoding | ✅ | 🚧 not for fnOS | 🚧 same | 🚧 same |
-| Playback speed | ✅ audiobook mode | ❌ | ❌ | ❌ |
-| Internet radio | ✅ | ✅ | 🚧 file import / export needs a file manager on the device | ✅ |
+| Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DSD (dsf / dff) | ✅ experimental | not verified | not verified | ✅ Full build | not verified |
+| Exclusive output | ✅ USB DAC | ❌ | ❌ | ✅ WASAPI | ❌ |
+| Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Server-side transcoding | ✅ | 🚧 not for fnOS | 🚧 same | 🚧 same | 🚧 same |
+| Playback speed | ✅ audiobook mode | ❌ | ❌ | ❌ | ❌ |
+| Internet radio | ✅ | ✅ | 🚧 file import / export needs a file manager on the device | ✅ | ✅ |
 
-| Lyrics | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
-|---|:-:|:-:|:-:|:-:|
-| Synced & word-by-word lyrics, translation, editing | ✅ | ✅ | ✅ | ✅ |
-| Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same |
-| Desktop / floating lyrics | ✅ | ❌ | ❌ | ✅ |
-| Car Bluetooth lyrics | ✅ | ❌ | ❌ | — |
+| Lyrics | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Synced & word-by-word lyrics, translation, editing | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Embedded / same-name .lrc lyrics and covers (local, SMB, WebDAV) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same | 🚧 same |
+| Desktop / floating lyrics | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Car Bluetooth lyrics | ✅ | ❌ | ❌ | — | — |
 
-| Library & playlists | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
-|---|:-:|:-:|:-:|:-:|
-| Smart home page, search suggestions, favorites, multi-select, listening stats | ✅ | ✅ | ✅ | ✅ |
-| Folder browsing | ✅ | 🚧 not for fnOS / Audiobookshelf | 🚧 same | 🚧 same |
-| Playlist from a folder (add a whole folder to a playlist / favorites / queue) | ✅ | 🚧 not for fnOS / Audiobookshelf; playlists only on server sources | 🚧 same | 🚧 same |
-| Folder management (create / rename / move / delete) | ✅ | ❌ | ❌ | ❌ |
-| Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same; import needs a file manager on the device | 🚧 server sources only |
-| Playlists: rename, reorder, remove songs, export | ✅ | ❌ | ❌ | ❌ |
-| Tag editing | ✅ | 🚧 Emby / Jellyfin / fnOS only | 🚧 same | 🚧 same |
-| Metadata fill, similar songs, queue history, sharing | ✅ | ❌ | ❌ | ❌ |
-| Audiobook mode (bookshelf, resume, speed), book store | ✅ | ❌ | ❌ | ❌ |
+| Library & playlists | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Smart home page, search suggestions, favorites, multi-select, listening stats | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Folder browsing | ✅ | 🚧 not for Audiobookshelf | 🚧 same | 🚧 same | 🚧 same |
+| Playlist from a folder (add a whole folder to a playlist / favorites / queue) | ✅ | 🚧 not for Audiobookshelf; playlists only on server sources | 🚧 same | 🚧 same | 🚧 same |
+| Folder management (create / rename / move / delete) | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Playlists: create, add songs, delete, import | ✅ | 🚧 server sources only | 🚧 same; import needs a file manager on the device | 🚧 server sources only | 🚧 server sources only |
+| Playlists: rename, reorder, remove songs, export | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Edit song info / cover / lyrics | ✅ | ✅ local MP3 / FLAC can be written into the file, or saved as sidecar files | ✅ same | ✅ same | ✅ same |
+| Hide video-only Emby / Jellyfin playlists | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Metadata fill, similar songs, queue history, sharing | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Audiobook mode (bookshelf, resume, speed), book store | ✅ | ❌ | ❌ | ❌ | ❌ |
 
-| System & account | HarmonyOS | Android phone / tablet | Android TV / car | Windows |
-|---|:-:|:-:|:-:|:-:|
-| System media controls (notification / lock screen / headset keys / media overlay) | ✅ | ✅ | ✅ | ✅ |
-| Cross-device continuation, casting | ✅ | ❌ | ❌ | ❌ |
-| Remote-control navigation | — | — | ✅ | — |
-| Tray, shortcuts, drag-and-drop, open with | — | — | — | ✅ |
-| Sign-in | ✅ Huawei ID | ✅ email / QR | ✅ email / QR | ✅ email / QR |
-| Membership (shared across platforms) | ✅ Huawei IAP | ✅ Alipay | ✅ Alipay | ✅ Alipay |
-| Themes, accent colors, dark mode, 3 languages | ✅ | ✅ | ✅ | ✅ |
-| Export / import settings | ✅ | ✅ | 🚧 needs a file manager on the device | ✅ |
+| System & account | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
+|---|:-:|:-:|:-:|:-:|:-:|
+| System media controls (notification / lock screen / headset keys / media overlay) | ✅ | ✅ | ✅ | ✅ | ❌ |
+| Cross-device continuation, casting | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Remote-control navigation; switch between tablet and TV layouts | — | ✅ switchable | ✅ | — | — |
+| Tray, shortcuts, drag-and-drop | — | — | — | ✅ | ✅ |
+| Open with (open files from the file manager) | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Sign-in | ✅ Huawei ID | ✅ email / QR | ✅ email / QR | ✅ email / QR | ✅ email / QR |
+| Membership (shared across platforms) | ✅ Huawei IAP | ✅ Alipay | ✅ Alipay | ✅ Alipay | ✅ Alipay |
+| Themes, accent colors, dark mode, 3 languages | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Export / import settings | ✅ | ✅ | 🚧 needs a file manager on the device | ✅ | ✅ |
 
 ## Feedback
 
