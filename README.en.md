@@ -142,7 +142,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Synced & word-by-word lyrics, translation, editing | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Embedded / same-name .lrc lyrics and covers (local, SMB, WebDAV) | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same | 🚧 same |
-| Desktop / floating lyrics | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Desktop / floating lyrics | ✅ | ✅ floating lyrics | ❌ | ✅ | ✅ |
 | Car Bluetooth lyrics | ✅ | ❌ | ❌ | — | — |
 
 | Library & playlists | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
@@ -169,7 +169,8 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Cross-device continuation, casting | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Remote-control navigation; switch between tablet and TV layouts | — | ✅ switchable | ✅ | — | — |
 | Tray, shortcuts, drag-and-drop | — | — | — | ✅ | ✅ |
-| Open with (open files from the file manager) | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Open with (open files from the file manager) | ✅ | ✅ incl. audio / m3u shared from other apps | ✅ needs a file manager on the device | ✅ | ❌ |
+| Android Auto | — | — | 🚧 browse, pick songs, voice search; not yet tested in a real car | — | — |
 | Sign-in | ✅ Huawei ID | ✅ email / QR | ✅ email / QR | ✅ email / QR | ✅ email / QR |
 | Membership (shared across platforms) | ✅ Huawei IAP | ✅ Alipay | ✅ Alipay | ✅ Alipay | ✅ Alipay |
 | Themes, accent colors, dark mode, 3 languages | ✅ | ✅ | ✅ | ✅ | ✅ |
