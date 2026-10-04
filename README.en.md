@@ -119,7 +119,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 |---|:-:|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ |
 | fnOS Music | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks play as albums; no podcasts | 🚧 same | 🚧 same | 🚧 same |
+| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks (audiobook mode); no podcasts | 🚧 same | 🚧 same | 🚧 same |
 | WebDAV, SMB (with LAN discovery), Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Huawei Drive | ✅ | — | — | — | — |
 | Multiple servers, address auto-switch, library sync (incl. incremental sync) | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -130,18 +130,18 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 |---|:-:|:-:|:-:|:-:|:-:|
 | Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ | ✅ |
 | DSD (dsf / dff) | ✅ experimental | not verified | not verified | ✅ Full build | not verified |
-| Exclusive output | ✅ USB DAC | ❌ | ❌ | ✅ WASAPI | ❌ |
+| Exclusive output | ✅ USB DAC | 🚧 USB DAC (Android 14+, experimental) | 🚧 same | ✅ WASAPI | ❌ |
 | Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Pause / resume downloads, cache to download, import downloaded files | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Server-side transcoding | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Playback speed | ✅ audiobook mode | ❌ | ❌ | ❌ | ❌ |
+| Playback speed | ✅ audiobook mode | ✅ audiobook mode | ✅ audiobook mode | ✅ audiobook mode | ✅ audiobook mode |
 | Internet radio | ✅ | ✅ | 🚧 file import / export needs a file manager on the device | ✅ | ✅ |
 
 | Lyrics | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|
 | Synced & word-by-word lyrics, translation, editing | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Embedded / same-name .lrc lyrics and covers (local, SMB, WebDAV) | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same | 🚧 same |
+| Per-line timing calibration | ✅ | ✅ | 🚧 global offset only | ✅ | ✅ |
 | Desktop / floating lyrics | ✅ | ✅ floating lyrics | ❌ | ✅ | ✅ |
 | Car Bluetooth lyrics | ✅ | ✅ | ✅ | — | — |
 
@@ -161,7 +161,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Upload to cloud drive | ✅ Huawei Drive / Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk |
 | Choose the default cover (separate for music and radio, or use your own image) | 🚧 one fixed image | ✅ | ✅ | ✅ | ✅ |
 | Queue history | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Audiobook mode (bookshelf, resume, speed), book store | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Audiobook mode (bookshelf, resume, speed), book store | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 | System & account | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|
