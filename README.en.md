@@ -124,7 +124,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Huawei Drive | ✅ | — | — | — | — |
 | Multiple servers, address auto-switch, library sync (incl. incremental sync) | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Switching servers saves progress and resumes when you switch back | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Multiple music libraries per server | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Multiple music libraries per server | ✅ | ✅ All / one library | ✅ Same | ✅ Same | ✅ Same |
 
 | Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|
@@ -143,7 +143,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Embedded / same-name .lrc lyrics and covers (local, SMB, WebDAV) | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Per-line timing calibration | ✅ | 🚧 global offset only | 🚧 same | 🚧 same | 🚧 same |
 | Desktop / floating lyrics | ✅ | ✅ floating lyrics | ❌ | ✅ | ✅ |
-| Car Bluetooth lyrics | ✅ | ❌ | ❌ | — | — |
+| Car Bluetooth lyrics | ✅ | ✅ | ✅ | — | — |
 
 | Library & playlists | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|
@@ -160,7 +160,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Automatic backup & restore of playlists / favorites / radio | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Upload to cloud drive | ✅ Huawei Drive / Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk | ✅ Baidu Netdisk |
 | Choose the default cover (separate for music and radio, or use your own image) | 🚧 one fixed image | ✅ | ✅ | ✅ | ✅ |
-| Queue history | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Queue history | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Audiobook mode (bookshelf, resume, speed), book store | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 | System & account | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
