@@ -6,7 +6,7 @@
 
 连接你自己的音乐库：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、Audiobookshelf、WebDAV、SMB、百度网盘与本地文件。
 
-Android（手机 / 平板 / 电视 / 车机）· Windows · Linux · HarmonyOS
+Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · HarmonyOS
 
 简体中文 | [English](README.en.md)
 
@@ -79,7 +79,16 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · Linux · HarmonyOS
 | `SonaWave-<版本>-linux-x86_64.AppImage` | **推荐**。播放内核（libmpv）和中文字体都打包在里面，下载后 `chmod +x` 直接运行，不用装别的 |
 | `SonaWave-<版本>-linux-amd64.deb` | Debian / Ubuntu 系。`sudo apt install ./SonaWave-<版本>-linux-amd64.deb`，播放内核由 apt 自动装系统的 libmpv |
 
-**macOS**：计划中（Intel / Apple 芯片）。**iOS**：暂未提供。
+**macOS（12 及以上，实验性支持，0.2.0 起）**
+
+| 文件 | 说明 |
+|---|---|
+| `SonaWave-<版本>-macos-arm64.dmg` | Apple 芯片（M1 及以后） |
+| `SonaWave-<版本>-macos-x86_64.dmg` | Intel 芯片 |
+
+打开 DMG，把 SonaWave 拖进「应用程序」。macOS 是首个版本，还没在多少真机上验证过：功能和 Linux 版基本相同，但暂时没有桌面歌词、菜单栏图标、系统「正在播放」和媒体键，遇到问题欢迎提 Issue。
+
+**iOS**：暂未提供。
 
 ### 校验
 
@@ -98,6 +107,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 ### 安装时的提示
 
 - **Windows 弹出「Windows 已保护你的电脑」**：安装包暂未做代码签名，点「更多信息」→「仍要运行」。请只从上面列出的地址下载。
+- **macOS 提示「无法验证开发者」或「已损坏」**：安装包暂未用 Apple 开发者证书签名和公证。在「应用程序」里右键 SonaWave →「打开」，再点「打开」；还不行就到「系统设置 → 隐私与安全性」底部点「仍要打开」；提示「已损坏」时在终端运行 `xattr -cr /Applications/SonaWave.app`。
 - **Android 提示「禁止安装未知来源应用」**：按提示允许浏览器 / 文件管理器安装应用即可。
 - **电视 / 盒子**：把 APK 拷到 U 盘，用盒子自带的文件管理器安装；或用「当贝助手」之类的工具推送。
 
@@ -113,7 +123,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ## 各版本功能对比
 
-✅ 已支持 · 🚧 部分支持 · ❌ 暂不支持 · — 不适用。鸿蒙版在华为应用市场，其余是本仓库发布的安卓 / Windows / Linux 版。
+✅ 已支持 · 🚧 部分支持 · ❌ 暂不支持 · — 不适用。鸿蒙版在华为应用市场，其余是本仓库发布的安卓 / Windows / Linux 版。macOS 版（实验性）功能与 Linux 列相同，但桌面歌词、托盘（菜单栏图标）、系统媒体控制暂不支持。
 
 | 音源 | 鸿蒙 | 安卓手机 / 平板 | 安卓电视 / 车机 | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|

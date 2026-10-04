@@ -6,7 +6,7 @@
 
 A music player for the library you already own: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf, WebDAV, SMB, Baidu Netdisk and local files.
 
-Android (phone / tablet / TV / car) · Windows · Linux · HarmonyOS
+Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 [简体中文](README.md) | English
 
@@ -79,7 +79,16 @@ The installer installs for the current user and does not need administrator righ
 | `SonaWave-<version>-linux-x86_64.AppImage` | **Recommended.** The playback engine (libmpv) and a CJK font are bundled; `chmod +x` it and run, nothing else to install |
 | `SonaWave-<version>-linux-amd64.deb` | Debian / Ubuntu. `sudo apt install ./SonaWave-<version>-linux-amd64.deb`; apt installs the system libmpv automatically |
 
-**macOS**: planned (Intel / Apple silicon). **iOS**: not available yet.
+**macOS (12 or later, experimental, since 0.2.0)**
+
+| File | Notes |
+|---|---|
+| `SonaWave-<version>-macos-arm64.dmg` | Apple silicon (M1 and later) |
+| `SonaWave-<version>-macos-x86_64.dmg` | Intel |
+
+Open the DMG and drag SonaWave into Applications. This is the first macOS release and it hasn't been tested on many real Macs yet: it matches the Linux build, except there are no desktop lyrics, menu bar icon, Now Playing or media keys for now. Please open an issue if something goes wrong.
+
+**iOS**: not available yet.
 
 ### Verify your download
 
@@ -98,6 +107,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 ### Installation notes
 
 - **Windows shows "Windows protected your PC"**: the installer is not code-signed yet. Click "More info" → "Run anyway". Only download from the links above.
+- **macOS says the developer can't be verified, or that the app is damaged**: the app isn't signed with an Apple Developer ID or notarized yet. Right-click SonaWave in Applications → Open, then Open again; if that doesn't work, click "Open Anyway" at the bottom of System Settings → Privacy & Security. If it says the app is damaged, run `xattr -cr /Applications/SonaWave.app` in Terminal.
 - **Android blocks installs from unknown sources**: allow your browser or file manager to install apps when prompted.
 - **TV boxes**: copy the APK to a USB drive and install it with the box's file manager, or push it with a sideloading tool.
 
@@ -113,7 +123,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 
 ## Feature comparison
 
-✅ supported · 🚧 partial · ❌ not yet · — not applicable. The HarmonyOS app is on Huawei AppGallery; the other columns are the Android / Windows / Linux builds released here.
+✅ supported · 🚧 partial · ❌ not yet · — not applicable. The HarmonyOS app is on Huawei AppGallery; the other columns are the Android / Windows / Linux builds released here. The macOS build (experimental) matches the Linux column, except desktop lyrics, tray (menu bar icon) and system media controls aren't supported yet.
 
 | Sources | HarmonyOS | Android phone / tablet | Android TV / car | Windows | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|
