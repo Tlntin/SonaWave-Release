@@ -18,9 +18,20 @@ body:
         - label: 安卓手机、平板 / Android phone, tablet
         - label: 安卓电视、盒子、车机 / Android TV, TV box, car
         - label: Windows
+        - label: macOS
+        - label: Linux
         - label: 鸿蒙 / HarmonyOS
     validations:
       required: true
+
+  - type: input
+    id: linux-distro
+    attributes:
+      label: Linux 发行版名称与版本号 / Linux distribution and version
+      description: 选择 Linux 时请填写具体的发行版名称和版本号；其他平台可留空 / For Linux, enter the distribution name and version; leave blank for other platforms
+      placeholder: 例如 Ubuntu 24.04、deepin 25、Debian 13 / e.g. Ubuntu 24.04, deepin 25, Debian 13
+    validations:
+      required: false
 
   - type: textarea
     id: idea
