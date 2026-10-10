@@ -56,6 +56,20 @@ body:
     validations:
       required: false
 
+  - type: dropdown
+    id: linux-architecture
+    attributes:
+      label: Linux 架构 / Linux architecture
+      description: 选择 Linux 时请选择系统架构 / For Linux, select your system architecture
+      options:
+        - 不适用 / Not Linux
+        - arm64（aarch64）
+        - x86_64（AMD64 / x86）
+        - 不确定 / Not sure
+      default: 0
+    validations:
+      required: false
+
   - type: textarea
     id: idea
     attributes:
