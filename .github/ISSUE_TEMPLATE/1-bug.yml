@@ -23,6 +23,8 @@ body:
         - label: 安卓电视、盒子 / Android TV, TV box
         - label: 车机 / Car head unit
         - label: Windows
+        - label: macOS
+        - label: Linux
         - label: 鸿蒙 / HarmonyOS
     validations:
       required: true
@@ -31,9 +33,18 @@ body:
     id: device
     attributes:
       label: 设备与系统版本 / Device and OS version
-      placeholder: 例如 小米 14 · Android 15、Windows 11、当贝盒子 B1 / e.g. Pixel 8 · Android 15, Windows 11
+      placeholder: 例如 小米 14 · Android 15、Windows 11、MacBook Air · macOS 15、Ubuntu 24.04 / e.g. Pixel 8 · Android 15, Windows 11, MacBook Air · macOS 15, Ubuntu 24.04
     validations:
       required: true
+
+  - type: input
+    id: linux-distro
+    attributes:
+      label: Linux 发行版名称与版本号 / Linux distribution and version
+      description: 选择 Linux 时请填写具体的发行版名称和版本号；其他平台可留空 / For Linux, enter the distribution name and version; leave blank for other platforms
+      placeholder: 例如 Ubuntu 24.04、deepin 25、Debian 13 / e.g. Ubuntu 24.04, deepin 25, Debian 13
+    validations:
+      required: false
 
   - type: input
     id: version
