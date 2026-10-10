@@ -38,6 +38,29 @@ body:
       required: true
 
   - type: input
+    id: macos-version
+    attributes:
+      label: macOS 版本号 / macOS version
+      description: 选择 macOS 时请填写系统版本号；其他平台可留空 / For macOS, enter the OS version; leave blank for other platforms
+      placeholder: 例如 macOS 15.6 / e.g. macOS 15.6
+    validations:
+      required: false
+
+  - type: dropdown
+    id: macos-architecture
+    attributes:
+      label: Mac 架构 / Mac architecture
+      description: 选择 macOS 时请选择 Mac 的处理器架构 / For macOS, select your Mac's processor architecture
+      options:
+        - 不适用 / Not macOS
+        - arm64（Apple 芯片 / Apple silicon）
+        - x86_64（Intel / x86）
+        - 不确定 / Not sure
+      default: 0
+    validations:
+      required: false
+
+  - type: input
     id: linux-distro
     attributes:
       label: Linux 发行版名称与版本号 / Linux distribution and version
