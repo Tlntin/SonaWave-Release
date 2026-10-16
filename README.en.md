@@ -51,6 +51,14 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
+### Join the Google Play test
+
+Help test SonaWave on Google Play! **Up to 20 testers, first come, first served.**
+
+Once the app launches on Google Play, each tester will receive a **Google Play edition membership (US$10 value)**, with email sign-in on **5 additional devices**.
+
+[Complete the questionnaire to apply](https://wj.qq.com/s2/28222572/meeq/)
+
 ### Which file do I need?
 
 **Android (Android 7.0 or later, including Android TV and car units)**

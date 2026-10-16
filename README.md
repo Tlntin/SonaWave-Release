@@ -51,6 +51,14 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
+### Google Play 测试招募
+
+邀请你加入听澜盒 Google Play 版测试！**最多招募 20 人，先到先得。**
+
+正式上架后，参与测试的用户将获赠一份 **Google Play 版会员（价值 10 美元）**，并可通过邮箱登录额外 **5 台设备**。
+
+[填写问卷，申请加入测试](https://wj.qq.com/s2/28222572/meeq/)
+
 ### 下哪个文件
 
 **Android（Android 7.0 及以上，含 Android TV / 车机）**
