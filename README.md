@@ -51,6 +51,15 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
+### 0.4.0 更新
+
+- 黑胶唱片播放样式、封面取色歌词、自定义主题，以及展开的平板播放页。
+- TV 队列逐行导航、删除与定位当前歌曲；失效 ID 提醒可直接用遥控器操作。
+- 修复听书重启后的章节显示，保留章节编号；大曲库后台归类、排序与目录按需渲染。
+- 推荐按当前收藏、歌单、最近播放依次补位，并改善服务器歌曲 ID 变化后的播放恢复。
+
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.0.html) · [0.4.0 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
+
 ### Google Play 测试招募
 
 邀请你加入听澜盒 Google Play 版测试！**最多招募 20 人，先到先得。**

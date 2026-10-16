@@ -51,6 +51,15 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
+### What's new in 0.4.0
+
+- Vinyl playback, cover-colored lyrics, custom themes and wider tablet playback layouts.
+- Predictable TV queue navigation, deletion and current-song location; remote-friendly stale-ID prompts.
+- Correct audiobook chapter display after restart, preserved chapter numbers, background library indexing and lazy folder rendering.
+- Recommendations prioritize current favorites, playlists and recent plays, with improved recovery after server song IDs change.
+
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.0.html#english) · [Download 0.4.0](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
+
 ### Join the Google Play test
 
 Help test SonaWave on Google Play! **Up to 20 testers, first come, first served.**
