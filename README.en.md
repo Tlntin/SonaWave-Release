@@ -57,6 +57,7 @@ Both repositories host identical files.
 - Predictable TV queue navigation, deletion and current-song location; remote-friendly stale-ID prompts.
 - Correct audiobook chapter display after restart, preserved chapter numbers, background library indexing and lazy folder rendering.
 - Recommendations prioritize current favorites, playlists and recent plays, with improved recovery after server song IDs change.
+- Added glass sync overlays, TV progress banners and a transparent desktop cloud-sync icon; stop repeated home refreshes while allowing sync to continue after hiding progress.
 
 [Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.0.html#english) · [Download 0.4.0](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
 

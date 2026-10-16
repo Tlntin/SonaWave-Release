@@ -57,6 +57,7 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 - TV 队列逐行导航、删除与定位当前歌曲；失效 ID 提醒可直接用遥控器操作。
 - 修复听书重启后的章节显示，保留章节编号；大曲库后台归类、排序与目录按需渲染。
 - 推荐按当前收藏、歌单、最近播放依次补位，并改善服务器歌曲 ID 变化后的播放恢复。
+- 补充玻璃同步蒙板、TV 顶部进度和桌面透明云同步图标；修复同步时首页反复刷新，收起后可继续同步。
 
 [阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.0.html) · [0.4.0 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
 
