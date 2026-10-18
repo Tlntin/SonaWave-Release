@@ -14,7 +14,7 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 </div>
 
-> 本仓库用于发布安装包和收集反馈，不公开应用源码。Android 发布附件包含定制音频后端的对应源码及许可文件。
+> 本仓库用于发布安装包和收集反馈。应用主体保持闭源，所用开源组件分别遵循其各自许可证。
 
 ## 截图
 
@@ -61,7 +61,7 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 [阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.1.html) · [0.4.1 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
 
-USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。`android-usb-source.tar.gz` 是音频后端源码，无需安装。
+USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
 
 ### Google Play 测试招募
 
@@ -123,6 +123,12 @@ Get-FileHash .\SonaWave-<版本>-windows-x64-full-setup.exe -Algorithm SHA256
 # Linux / macOS
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
+
+### 开源组件与许可
+
+Android 使用 mpv、FFmpeg 等音频开源组件。`android-audio-components-source.tar.gz` 附件提供这些库的对应源码、库内修改、公开 C 接口及重建说明，供开发者按相应许可使用，普通用户无需下载或安装。
+
+应用主体及独立 USB 引擎保持闭源；该附件不包含 USB 传输、设备解析、硬件音量及 JNI 实现。仅供重建库使用的链接辅助代码不得替换进正式 APK。
 
 ### 安装时的提示
 

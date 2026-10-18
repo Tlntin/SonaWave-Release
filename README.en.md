@@ -14,7 +14,7 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 </div>
 
-> This repository hosts release packages and issue reports. Application source is private; Android release assets include the corresponding customized audio-backend sources and licenses.
+> This repository hosts release packages and issue reports. The application remains proprietary; its open-source components are governed by their respective licences.
 
 ## Screenshots
 
@@ -61,7 +61,7 @@ Both repositories host identical files.
 
 [Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.1.html#english) · [Download 0.4.1](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
 
-USB output remains experimental; compressed DST uses PCM. The `android-usb-source.tar.gz` audio-backend source archive does not need to be installed.
+USB output remains experimental; compressed DST uses PCM.
 
 ### Join the Google Play test
 
@@ -123,6 +123,12 @@ Get-FileHash .\SonaWave-<version>-windows-x64-full-setup.exe -Algorithm SHA256
 # Linux / macOS
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
+
+### Open-source components and licences
+
+Android uses mpv, FFmpeg and other audio libraries. The `android-audio-components-source.tar.gz` asset supplies the corresponding library sources, modifications within those libraries, public C ABI and rebuilding instructions under the applicable licences. End users do not need to download or install it.
+
+The application and independent USB engine remain proprietary. The archive excludes the USB transport, descriptor parsing, hardware-volume and JNI implementations. The link-only helper must never replace the real engine in an APK.
 
 ### Installation notes
 
