@@ -14,7 +14,7 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 </div>
 
-> This repository only hosts release packages and issue reports. It does not contain source code.
+> This repository hosts release packages and issue reports. Application source is private; Android release assets include the corresponding customized audio-backend sources and licenses.
 
 ## Screenshots
 
@@ -51,15 +51,17 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.4.0
+### What's new in 0.4.1
 
-- Vinyl playback, cover-colored lyrics, custom themes and wider tablet playback layouts.
-- Predictable TV queue navigation, deletion and current-song location; remote-friendly stale-ID prompts.
-- Correct audiobook chapter display after restart, preserved chapter numbers, background library indexing and lazy folder rendering.
-- Recommendations prioritize current favorites, playlists and recent plays, with improved recovery after server song IDs change.
-- Added glass sync overlays, TV progress banners and a transparent desktop cloud-sync icon; stop repeated home refreshes while allowing sync to continue after hiding progress.
+- Direct USB DAC output on Android 7.0+, with DoP, Native DSD and automatic selection for DSF / uncompressed DFF when supported by the DAC.
+- Start DAC connections at 30% volume or lower, control the DAC with volume keys, and restore system volume control on unplug.
+- Fix DFF playback, high-rate USB allocation failures and initial playback failures when switching between DSD and FLAC.
+- Support Android's default USB association. Only try optional compatibility setup if a previously connected DAC cannot reconnect automatically. The app does not record microphone audio.
+- Add transfer-water-level diagnostics and logs; improve narrow account/membership layouts and bottom spacing without a gesture bar.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.0.html#english) · [Download 0.4.0](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.1.html#english) · [Download 0.4.1](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
+
+USB output remains experimental; compressed DST uses PCM. The `android-usb-source.tar.gz` audio-backend source archive does not need to be installed.
 
 ### Join the Google Play test
 
@@ -132,7 +134,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 ## Features
 
 - **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB, Baidu Netdisk and local folders, with multiple sources at once
-- **Playback**: lossless and CUE sheets, DSD (dsf / dff) in the Windows Full build; equalizer; exclusive output on Windows; play while caching and offline downloads
+- **Playback**: lossless and CUE sheets, DSD (dsf / dff) on Android and Windows Full; equalizer; Android USB / Windows WASAPI exclusive output; play while caching and offline downloads
 - **Lyrics**: synced and word-by-word lyrics, translation; desktop lyrics on PC
 - **Discovery**: recommendations based on what you like, search suggestions, listening stats; internet radio
 - **Library**: favorites and playlists, M3U / TXT playlist import
@@ -157,8 +159,8 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | Playback | HarmonyOS | Android phone / tablet | Android TV / car | Windows | macOS | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Lossless, CUE tracks, equalizer, ReplayGain, fade, sleep timer | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| DSD (dsf / dff) | ✅ experimental | not verified | not verified | ✅ Full build | not verified | not verified |
-| Exclusive output | ✅ USB DAC | 🚧 USB DAC (Android 14+, experimental) | 🚧 same | ✅ WASAPI | ❌ | ❌ |
+| DSD (dsf / dff) | ✅ experimental | 🚧 PCM / USB DoP / Native (experimental, DAC-dependent; DST uses PCM) | 🚧 same | ✅ Full build | not verified | not verified |
+| Exclusive output | ✅ USB DAC | 🚧 USB DAC (Android 7.0+, experimental) | 🚧 same | ✅ WASAPI | ❌ | ❌ |
 | Play while downloading, offline downloads | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Pause / resume downloads, cache to download, import downloaded files | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Server-side transcoding | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |

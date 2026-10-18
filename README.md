@@ -14,7 +14,7 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 </div>
 
-> 本仓库只用于发布安装包和收集反馈，不包含源码。
+> 本仓库用于发布安装包和收集反馈，不公开应用源码。Android 发布附件包含定制音频后端的对应源码及许可文件。
 
 ## 截图
 
@@ -51,15 +51,17 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
-### 0.4.0 更新
+### 0.4.1 更新
 
-- 黑胶唱片播放样式、封面取色歌词、自定义主题，以及展开的平板播放页。
-- TV 队列逐行导航、删除与定位当前歌曲；失效 ID 提醒可直接用遥控器操作。
-- 修复听书重启后的章节显示，保留章节编号；大曲库后台归类、排序与目录按需渲染。
-- 推荐按当前收藏、歌单、最近播放依次补位，并改善服务器歌曲 ID 变化后的播放恢复。
-- 补充玻璃同步蒙板、TV 顶部进度和桌面透明云同步图标；修复同步时首页反复刷新，收起后可继续同步。
+- Android 7.0 起支持 USB DAC 独占，DSF / 未压缩 DFF 支持 DoP、原生 DSD 和自动选择，直通能力取决于 DAC。
+- DAC 连接从不高于 30% 音量起步，音量键统一控制 DAC，拔出后恢复系统音量。
+- 修复 DFF 播放、高采样率 USB 内存分配失败，以及 DSD / FLAC 互切首次播放失败。
+- 支持系统 USB 默认设备关联；仅当已连接过的 DAC 无法自动授权时，再尝试可选兼容授权。应用不录音。
+- 增加缓冲水位与诊断日志，改善手机账号会员换行、无手势条时的底部间距。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.0.html) · [0.4.0 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.0)
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.1.html) · [0.4.1 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
+
+USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。`android-usb-source.tar.gz` 是音频后端源码，无需安装。
 
 ### Google Play 测试招募
 
@@ -132,7 +134,7 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 ## 功能
 
 - **多种音源**：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、Audiobookshelf（有声书）、WebDAV、SMB、百度网盘、本机文件夹，可同时添加多个
-- **播放**：无损、CUE 分轨，Windows 完整版支持 DSD（dsf / dff）；均衡器；Windows 独占输出；边下边播与离线下载
+- **播放**：无损、CUE 分轨，Android 与 Windows 完整版支持 DSD（dsf / dff）；均衡器；Android USB / Windows WASAPI 独占输出；边下边播与离线下载
 - **歌词**：同步歌词、逐字歌词、歌词翻译；电脑桌面歌词
 - **发现**：按你的喜欢推荐、搜索联想、听歌统计；网络电台
 - **整理**：收藏、歌单，M3U / TXT 歌单导入
@@ -157,8 +159,8 @@ sha256sum -c SHA256SUMS.txt --ignore-missing
 | 播放 | 鸿蒙 | 安卓手机 / 平板 | 安卓电视 / 车机 | Windows | macOS | Linux |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | 无损、CUE 分轨、均衡器、回放增益、淡入淡出、定时关闭 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| DSD（dsf / dff） | ✅ 实验性 | 未验证 | 未验证 | ✅ 完整版 | 未验证 | 未验证 |
-| 独占输出 | ✅ USB 解码器 | 🚧 USB 解码器（安卓 14+，实验性） | 🚧 同左 | ✅ WASAPI | ❌ | ❌ |
+| DSD（dsf / dff） | ✅ 实验性 | 🚧 PCM / USB DoP / Native（实验性，取决于 DAC；DST 转 PCM） | 🚧 同左 | ✅ 完整版 | 未验证 | 未验证 |
+| 独占输出 | ✅ USB 解码器 | 🚧 USB 解码器（安卓 7.0+，实验性） | 🚧 同左 | ✅ WASAPI | ❌ | ❌ |
 | 边下边播、离线下载 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 下载暂停 / 继续、缓存转下载、导入已下载 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 服务器转码 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
