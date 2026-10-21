@@ -51,17 +51,16 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
-### 0.4.1 更新
+### 0.4.2 更新
 
-- Android 7.0 起支持 USB DAC 独占，DSF / 未压缩 DFF 支持 DoP、原生 DSD 和自动选择，直通能力取决于 DAC。
-- DAC 连接从不高于 30% 音量起步，音量键统一控制 DAC，拔出后恢复系统音量。
-- 修复 DFF 播放、高采样率 USB 内存分配失败，以及 DSD / FLAC 互切首次播放失败。
-- 支持系统 USB 默认设备关联；仅当已连接过的 DAC 无法自动授权时，再尝试可选兼容授权。应用不录音。
-- 增加缓冲水位与诊断日志，改善手机账号会员换行、无手势条时的底部间距。
+- 竖屏黑胶与歌词页使用同一张封面连续转正、缩放和展开圆角，改善快速反向滑动。
+- 完善百度网盘授权、过期恢复与同步进度，改善播放响应、切歌、缓冲恢复及音频信息展示，避免重复音源。
+- 设备解绑调整为每 7 天最多 5 次，完善设备系统信息展示；精简 Android 音频组件源码附件。
+- 包含站外 Android、Windows、Linux 与 macOS，不包含 Google Play 版。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.1.html) · [0.4.1 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.2.html) · [0.4.2 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.2)
 
-USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
+USB ??????????DST ?? DSD ?? PCM?
 
 ### Google Play 测试招募
 

@@ -51,15 +51,14 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.4.1
+### What's new in 0.4.2
 
-- Direct USB DAC output on Android 7.0+, with DoP, Native DSD and automatic selection for DSF / uncompressed DFF when supported by the DAC.
-- Start DAC connections at 30% volume or lower, control the DAC with volume keys, and restore system volume control on unplug.
-- Fix DFF playback, high-rate USB allocation failures and initial playback failures when switching between DSD and FLAC.
-- Support Android's default USB association. Only try optional compatibility setup if a previously connected DAC cannot reconnect automatically. The app does not record microphone audio.
-- Add transfer-water-level diagnostics and logs; improve narrow account/membership layouts and bottom spacing without a gesture bar.
+- Smooth portrait vinyl-to-lyrics transitions with one cover that rotates upright, resizes and changes corner shape continuously, including reversed swipes.
+- Improve Baidu Netdisk authorization, expired-session recovery, sync progress, playback response, track switching, buffering recovery and audio details. Prevent duplicate sources.
+- Allow up to five device unbindings per seven days, improve device OS details and reduce the Android audio-component source archive size.
+- Includes independently distributed Android, Windows, Linux and macOS builds; Google Play is excluded.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.1.html#english) · [Download 0.4.1](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.1)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.2.html#english) · [Download 0.4.2](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.2)
 
 USB output remains experimental; compressed DST uses PCM.
 
