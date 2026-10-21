@@ -60,7 +60,7 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 [阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.2.html) · [0.4.2 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.2)
 
-USB ??????????DST ?? DSD ?? PCM?
+USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
 
 ### Google Play 测试招募
 
