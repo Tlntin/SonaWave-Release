@@ -51,16 +51,16 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
-### 0.4.2 更新
+### 0.4.3 更新
 
-- 竖屏黑胶与歌词页使用同一张封面连续转正、缩放和展开圆角，改善快速反向滑动。
-- 完善百度网盘授权、过期恢复与同步进度，改善播放响应、切歌、缓冲恢复及音频信息展示，避免重复音源。
-- 设备解绑调整为每 7 天最多 5 次，完善设备系统信息展示；精简 Android 音频组件源码附件。
-- 包含站外 Android、Windows、Linux 与 macOS，不包含 Google Play 版。
+- 修复大音乐库同步、分页与文件夹浏览异常，优化同步后的歌曲引用恢复。
+- 新增自定义均衡器预设；实验性无缝播放改善兼容本地 / 完整缓存 FLAC/WAV 队列开启 EQ 时的跨曲衔接。
+- 播放前重新检查下载与缓存，及时使用新完成的本地副本，并在文件失效时回退音源。
+- 包含站外 Android、Windows、Linux 与 macOS；Google Play 另行提交。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.2.html) · [0.4.2 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.2)
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.3.html) · [0.4.3 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.3)
 
-USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
+无缝播放为会员实验功能，需相同音频参数及引擎支持，Windows 建议使用完整版；网络流、混合格式、CUE 与 USB 等场景沿用原有策略。USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
 
 ### Google Play 测试招募
 

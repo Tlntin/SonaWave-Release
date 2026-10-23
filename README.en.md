@@ -51,16 +51,16 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.4.2
+### What's new in 0.4.3
 
-- Smooth portrait vinyl-to-lyrics transitions with one cover that rotates upright, resizes and changes corner shape continuously, including reversed swipes.
-- Improve Baidu Netdisk authorization, expired-session recovery, sync progress, playback response, track switching, buffering recovery and audio details. Prevent duplicate sources.
-- Allow up to five device unbindings per seven days, improve device OS details and reduce the Android audio-component source archive size.
-- Includes independently distributed Android, Windows, Linux and macOS builds; Google Play is excluded.
+- Fix large-library sync, pagination and folder browsing, and improve song-reference recovery after sync.
+- Add custom EQ presets. Experimental gapless playback improves transitions with EQ for compatible local or fully cached FLAC/WAV queues.
+- Recheck downloads and caches before playback, use newly completed local copies and fall back to the source when a local file becomes unavailable.
+- Includes independently distributed Android, Windows, Linux and macOS builds. Google Play is submitted separately.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.2.html#english) · [Download 0.4.2](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.2)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.3.html#english) · [Download 0.4.3](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.3)
 
-USB output remains experimental; compressed DST uses PCM.
+Gapless playback is a membership experiment requiring matching audio parameters and engine support; the full Windows build is recommended. Network streams, mixed formats, CUE and USB retain existing behavior. USB output remains experimental; compressed DST uses PCM.
 
 ### Join the Google Play test
 
