@@ -96,8 +96,10 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 | 文件 | 说明 |
 |---|---|
-| `SonaWave-<版本>-linux-x86_64.AppImage` | **推荐**。播放内核（libmpv）和中文字体都打包在里面，下载后 `chmod +x` 直接运行，不用装别的 |
+| `SonaWave-<版本>-x86_64.AppImage` | **Linux 便携版，推荐**。播放内核（libmpv）和中文字体都打包在里面，下载后 `chmod +x` 直接运行，不用装别的 |
 | `SonaWave-<版本>-linux-amd64.deb` | Debian / Ubuntu 系。`sudo apt install ./SonaWave-<版本>-linux-amd64.deb`，播放内核由 apt 自动装系统的 libmpv |
+
+0.5.1 起的 AppImage 附带 `.AppImage.zsync` 更新索引，供 AppImageUpdate 等工具使用；下载运行请选择 `.AppImage` 文件。0.5.1 之前的历史版本也已统一去掉文件名中的 `-linux-`，程序内容保持原样。
 
 **macOS（12 及以上，实验性支持，0.2.0 起）**
 

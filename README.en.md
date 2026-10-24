@@ -96,8 +96,10 @@ The installer installs for the current user and does not need administrator righ
 
 | File | Notes |
 |---|---|
-| `SonaWave-<version>-linux-x86_64.AppImage` | **Recommended.** The playback engine (libmpv) and a CJK font are bundled; `chmod +x` it and run, nothing else to install |
+| `SonaWave-<version>-x86_64.AppImage` | **Linux portable build, recommended.** The playback engine (libmpv) and a CJK font are bundled; `chmod +x` it and run, nothing else to install |
 | `SonaWave-<version>-linux-amd64.deb` | Debian / Ubuntu. `sudo apt install ./SonaWave-<version>-linux-amd64.deb`; apt installs the system libmpv automatically |
+
+AppImage releases from 0.5.1 include a `.AppImage.zsync` update index for tools such as AppImageUpdate. Download the `.AppImage` file to run the app. Releases before 0.5.1 have also been renamed to remove `-linux-`; their application contents are unchanged.
 
 **macOS (12 or later, experimental, since 0.2.0)**
 
