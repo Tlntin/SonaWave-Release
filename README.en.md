@@ -51,15 +51,15 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.5.0
+### What's new in 0.5.1
 
-- Add music-library management and filtering, home cover carousels and playback controls on playlist covers.
-- Put sign-in and recovery first during setup; refine sharing, tablet/PC spacing and lyrics layouts.
-- Improve Baidu Netdisk playback, seeking, caches and metadata recovery, plus server/SMB connection checks.
-- Add experimental Windows DoP and Android HDMI passthrough, output diagnostics and PCM fallback.
+- Fix Windows crashes during playback and sign-out.
+- Improve Baidu Netdisk seeking and buffering; retain cover, lyrics and metadata upload jobs across track changes and failures.
+- Read uploaded JSON back in full and verify it before marking a job complete.
+- Fix automatic backup waits appearing as a restore spinner, with clearer waiting status, cancellation and timeouts.
 - Includes independently distributed Android, Windows, Linux and macOS builds. Google Play is submitted separately.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.0.html#english) · [Download 0.5.0](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.0)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.1.html#english) · [Download 0.5.1](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.1)
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
