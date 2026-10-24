@@ -51,16 +51,17 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.4.3
+### What's new in 0.5.0
 
-- Fix large-library sync, pagination and folder browsing, and improve song-reference recovery after sync.
-- Add custom EQ presets. Experimental gapless playback improves transitions with EQ for compatible local or fully cached FLAC/WAV queues.
-- Recheck downloads and caches before playback, use newly completed local copies and fall back to the source when a local file becomes unavailable.
+- Add music-library management and filtering, home cover carousels and playback controls on playlist covers.
+- Put sign-in and recovery first during setup; refine sharing, tablet/PC spacing and lyrics layouts.
+- Improve Baidu Netdisk playback, seeking, caches and metadata recovery, plus server/SMB connection checks.
+- Add experimental Windows DoP and Android HDMI passthrough, output diagnostics and PCM fallback.
 - Includes independently distributed Android, Windows, Linux and macOS builds. Google Play is submitted separately.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.4.3.html#english) · [Download 0.4.3](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.3)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.0.html#english) · [Download 0.5.0](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.0)
 
-Gapless playback is a membership experiment requiring matching audio parameters and engine support; the full Windows build is recommended. Network streams, mixed formats, CUE and USB retain existing behavior. USB output remains experimental; compressed DST uses PCM.
+Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
 ### Join the Google Play test
 

@@ -51,16 +51,17 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
-### 0.4.3 更新
+### 0.5.0 更新
 
-- 修复大音乐库同步、分页与文件夹浏览异常，优化同步后的歌曲引用恢复。
-- 新增自定义均衡器预设；实验性无缝播放改善兼容本地 / 完整缓存 FLAC/WAV 队列开启 EQ 时的跨曲衔接。
-- 播放前重新检查下载与缓存，及时使用新完成的本地副本，并在文件失效时回退音源。
+- 新增音乐库管理、范围筛选、首页封面轮播与歌单封面快捷播放。
+- 首次使用优先展示账号登录与配置恢复，完善播放页分享、平板 / PC 间距与歌词布局。
+- 改善百度网盘播放、进度恢复、缓存与元数据补全，完善服务器连接及 SMB 共享预检。
+- 新增实验性 Windows DoP 与 Android HDMI 直通，提供输出诊断和 PCM 回退。
 - 包含站外 Android、Windows、Linux 与 macOS；Google Play 另行提交。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.4.3.html) · [0.4.3 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.4.3)
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.5.0.html) · [0.5.0 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.0)
 
-无缝播放为会员实验功能，需相同音频参数及引擎支持，Windows 建议使用完整版；网络流、混合格式、CUE 与 USB 等场景沿用原有策略。USB 独占仍为实验性支持，DST 压缩 DSD 使用 PCM。
+直通默认关闭，实际支持取决于设备、驱动与编码；Windows DoP 建议使用完整版，Android HDMI 暂不支持 DSD 直通。无缝播放与 USB 独占保留既有实验性及格式限制，DST 压缩 DSD 使用 PCM。
 
 ### Google Play 测试招募
 
