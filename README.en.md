@@ -67,9 +67,11 @@ Passthrough is off by default and depends on the device, driver and codec. Use t
 
 Help test SonaWave on Google Play! **Up to 20 testers, first come, first served.**
 
-Once the app launches on Google Play, each tester will receive a **Google Play edition membership (US$10 value)**, with email sign-in on **5 additional devices**.
+**To qualify, you must actually join the Google Play closed test and remain opted in without leaving until the app officially launches on Google Play. Completing the questionnaire or applying alone does not qualify.** Eligible testers will receive a **Google Play edition membership (US$10 value)** after launch, with email sign-in on **5 additional devices**.
 
 [Complete the questionnaire to apply](https://wj.qq.com/s2/28222572/meeq/)
+
+Already invited? Use the Google account you registered with to open the [Google Play closed-test page](https://play.google.com/apps/testing/com.tlntin.sonawave), opt in, then [download the test version on Google Play](https://play.google.com/store/apps/details?id=com.tlntin.sonawave). Remain opted in until the official launch.
 
 ### Which file do I need?
 
