@@ -77,8 +77,8 @@ Already invited? Use the Google account you registered with to open the [Google 
 
 | Membership | Sign-in method | Home platform devices | Devices on other systems |
 |---|---|---|---|
-| HarmonyOS membership | Sign in with the same Huawei account | Unlimited HarmonyOS devices | Email sign-in on up to 5 additional devices across other systems in total |
-| Google Play edition membership | Sign in with your Google account; the device must also be signed in to the same corresponding Google Play account | Unlimited Android devices using the Google Play edition | Email sign-in on up to 5 additional devices across other systems in total |
+| HarmonyOS membership | Sign in with the same Huawei account | Unlimited HarmonyOS devices | Link an email address in the membership center, then use it to sign in on up to 5 additional devices across other systems in total |
+| Google Play edition membership | Sign in with your Google account; the device must also be signed in to the same corresponding Google Play account | Unlimited Android devices using the Google Play edition | Link an email address in the membership center, then use it to sign in on up to 5 additional devices across other systems in total |
 | Email membership | Sign in with your registered email account | Up to 5 devices in total across all systems | Included in the 5-device total |
 
 The 5 additional devices for HarmonyOS and Google Play memberships are a combined allowance across other systems. Email membership allows 5 devices in total across all systems.
