@@ -51,15 +51,15 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 两个仓库的安装包完全一样，选速度快的就行。
 
-### 0.5.1 更新
+### 0.5.2 更新
 
-- 修复 Windows 播放过程中及退出账号时可能出现的闪退。
-- 优化百度网盘进度恢复与缓冲；封面、歌词及元数据回传支持切歌后继续处理和失败重试。
-- 上传 JSON 后完整读回校验，避免将不完整文件视为成功。
-- 修复高级设置中自动备份等待显示为恢复操作持续转圈，增加等待提示、取消和超时处理。
+- Android 状态栏与底部导航栏支持横竖屏独立设置，PC、TV 和平板共用，方便保留车机系统控制按钮。
+- 新增实验性自动元数据同步（会员功能），默认关闭，可选每次启动或每 24 小时；仅在应用运行时执行，优先增量，为在线播放让路。
+- Windows、Linux、macOS 暂停约 1.5 秒后释放音频设备，续播时恢复；修复触屏 PC 窄屏播放条溢出。
+- 修复 Windows 启动位置权限提示；Linux AppImage 提供 AppImageUpdate 信息与 `.zsync` 文件。
 - 包含站外 Android、Windows、Linux 与 macOS；Google Play 另行提交。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.5.1.html) · [0.5.1 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.1)
+[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.5.2.html) · [0.5.2 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.2)
 
 直通默认关闭，实际支持取决于设备、驱动与编码；Windows DoP 建议使用完整版，Android HDMI 暂不支持 DSD 直通。无缝播放与 USB 独占保留既有实验性及格式限制，DST 压缩 DSD 使用 PCM。
 
