@@ -51,15 +51,16 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 
 Both repositories host identical files.
 
-### What's new in 0.5.2
+### What's new in 0.5.3
 
-- Configure Android status and navigation bars independently for portrait and landscape, with shared settings for PC, TV and tablet layouts.
-- Add experimental automatic metadata sync for VIP members, off by default, on launch or every 24 hours while the app is running. It prefers incremental sync and yields to online playback.
-- Release desktop audio devices about 1.5 seconds after pausing and restore them before resuming. Fix overflowing controls in narrow touch PC layouts.
-- Prevent unexpected Windows startup location-permission prompts; provide AppImageUpdate metadata and `.zsync` files for Linux AppImages.
+- Improve experimental VIP CUE playback, seeking and cleanup for local, WebDAV, SMB, Baidu and fnOS sources.
+- Add immersive portrait details, quick playlist playback and optional folder-image artwork fallback.
+- Adjust classic and vinyl artwork sizes separately, with independent tonearm and disc controls.
+- Fix default or blank Emby/Jellyfin artwork in artist albums, favorites, search, recent/frequent albums and listening history.
+- Keep Android foreground-service protection during brief automatic track transitions, retain session/exit diagnostics, and fix a Windows post-update exit crash.
 - Includes independently distributed Android, Windows, Linux and macOS builds. Google Play is submitted separately.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.2.html#english) · [Download 0.5.2](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.2)
+[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.3.html#english) · [Download 0.5.3](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.3)
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
