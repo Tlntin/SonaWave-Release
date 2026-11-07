@@ -48,8 +48,12 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 | 国内（GitCode） | <https://gitcode.com/Tlntin/SonaWave-Release/releases> |
 | GitHub | <https://github.com/Tlntin/SonaWave-Release/releases/latest> |
 | 鸿蒙（华为应用市场） | <https://appgallery.huawei.com/app/detail?id=com.tlntin.sonawave> |
+| Google Play 封闭测试：加入测试 | <https://play.google.com/apps/testing/com.tlntin.sonawave> |
+| Google Play 封闭测试：下载 / 更新 | <https://play.google.com/store/apps/details?id=com.tlntin.sonawave> |
 
 两个仓库的安装包完全一样，选速度快的就行。
+
+Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「加入测试」链接完成加入，再下载或更新。尚未获邀，请先查看下方测试招募说明。
 
 ### 0.5.3 更新
 

@@ -48,8 +48,12 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
 | GitHub | <https://github.com/Tlntin/SonaWave-Release/releases/latest> |
 | GitCode (faster in mainland China) | <https://gitcode.com/Tlntin/SonaWave-Release/releases> |
 | HarmonyOS (Huawei AppGallery) | <https://appgallery.huawei.com/app/detail?id=com.tlntin.sonawave> |
+| Google Play closed test: opt in | <https://play.google.com/apps/testing/com.tlntin.sonawave> |
+| Google Play closed test: download / update | <https://play.google.com/store/apps/details?id=com.tlntin.sonawave> |
 
 Both repositories host identical files.
+
+The Google Play closed test is available to invited Google accounts. Opt in using the test link before downloading or updating. If you have not been invited, see the tester recruitment section below first.
 
 ### What's new in 0.5.3
 
