@@ -55,6 +55,14 @@ Both repositories host identical files.
 
 The Google Play closed test is available to invited Google accounts. Opt in using the test link before downloading or updating. If you have not been invited, see the tester recruitment section below first.
 
+### Receive update notifications
+
+In the app, open **Me → Settings → About → Receive update notifications** and enable the channel you want:
+
+- **HarmonyOS**: currently supports Huawei push notifications for invitation-test updates.
+- **Other editions (Android outside Google Play, Windows, macOS and Linux)**: receive stable-release updates by email. Sign in to your app account and link a verified email address first.
+- Notifications are off by default. You can turn them off in the app or unsubscribe using the email link. The Google Play edition currently has no subscription entry; get updates through Google Play.
+
 ### What's new in 0.5.3
 
 - Improve experimental VIP CUE playback, seeking and cleanup for local, WebDAV, SMB, Baidu and fnOS sources.
