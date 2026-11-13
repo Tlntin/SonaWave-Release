@@ -70,6 +70,7 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 - Add Audiobookshelf podcasts, episode progress and resumable sync, and persistent UGREEN sign-in.
 - Improve cover loading, tablet folders and tonearm behavior. Fix notification artwork and membership refresh, and add a QQ community entry.
 - Google Play AAB submission is separate.
+- Linyaps UAB is deferred after upstream dependency HTTP 502 errors and packaging failures during this build cycle; it will be handled separately.
 
 [Read the full update and download 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 

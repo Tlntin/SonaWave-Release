@@ -70,6 +70,7 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 - Audiobookshelf 增加播客、单集进度和可续传同步，绿联支持保持登录。
 - 优化封面加载、平板文件夹和唱臂状态，修复通知封面与会员状态刷新，增加 QQ 交流入口。
 - Google Play AAB 另行提交。
+- 玲珑 UAB 本版暂缓：本轮曾遇上游依赖源 502 和打包失败，后续单独处理。
 
 [阅读完整更新说明及下载 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 
