@@ -6,7 +6,7 @@
 
 A music player for the library you already own: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf, WebDAV, SMB, Baidu Netdisk and local files.
 
-Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS
+Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS · OpenHarmony PC (experimental support)
 
 [简体中文](README.md) | English
 
@@ -63,16 +63,15 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 - **Other editions (Android outside Google Play, Windows, macOS and Linux)**: receive stable-release updates by email. Sign in to your app account and link a verified email address first.
 - Notifications are off by default. You can turn them off in the app or unsubscribe using the email link. The Google Play edition currently has no subscription entry; get updates through Google Play.
 
-### What's new in 0.5.3
+### What's new in 0.6.5
 
-- Improve experimental VIP CUE playback, seeking and cleanup for local, WebDAV, SMB, Baidu and fnOS sources.
-- Add immersive portrait details, quick playlist playback and optional folder-image artwork fallback.
-- Adjust classic and vinyl artwork sizes separately, with independent tonearm and disc controls.
-- Fix default or blank Emby/Jellyfin artwork in artist albums, favorites, search, recent/frequent albums and listening history.
-- Keep Android foreground-service protection during brief automatic track transitions, retain session/exit diagnostics, and fix a Windows post-update exit crash.
-- Includes independently distributed Android, Windows, Linux and macOS builds. Google Play is submitted separately.
+- Add an OpenHarmony PC x86_64 package with experimental support for OpenHarmony + HarmonyOS, requiring HarmonyOS 6.1.0 or later.
+- Browse, search and edit multiple genres. Add optional Emby / Jellyfin landscape artist backdrops and improve album display, sorting and random pagination.
+- Add Audiobookshelf podcasts, episode progress and resumable sync, and persistent UGREEN sign-in.
+- Improve cover loading, tablet folders and tonearm behavior. Fix notification artwork and membership refresh, and add a QQ community entry.
+- Get the native Huawei HarmonyOS app from AppGallery; no separate Huawei PC package is distributed. Google Play AAB submission is separate.
 
-[Read the full update](https://music.http5.cn/docs/releases/flutter-0.5.3.html#english) · [Download 0.5.3](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.3)
+[Read the full update and download 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
@@ -135,6 +134,21 @@ AppImage releases from 0.5.1 include a `.AppImage.zsync` update index for tools 
 
 Open the DMG and drag SonaWave into Applications. This is the first macOS release and it hasn't been tested on many real Macs yet: it matches the Linux build, except there are no desktop lyrics, menu bar icon, Now Playing or media keys for now. Please open an issue if something goes wrong.
 
+**OpenHarmony PC (x86_64, experimental support)**
+
+Supports **OpenHarmony + HarmonyOS; requires HarmonyOS 6.1.0 or later**. **Validated on HarmonyOS PC. Most features pass on Kaihong PC; a small number do not yet pass.**
+This release includes only the OpenHarmony PC package. Huawei HarmonyOS users can continue using the native AppGallery app; no separate Huawei PC or ARM64 HarmonyOS package is distributed.
+
+| File | Notes |
+|---|---|
+| `SonaWave-<version>-openharmony-x86_64-signed.hap` | Pre-signed package for installation, with OS signature verification kept enabled |
+| `…-openharmony-x86_64-unsigned.hap` | For developers with their own device signing setup |
+| `…-openharmony-x86_64-README.md` | Installation guide, validation scope and known limitations |
+
+Tray integration, system desktop lyrics and public downloads have compatibility limitations on Kaihong PC. Physical peripherals and long-term stability need further validation.
+The preserved OpenHarmony SDK test identity is used for experimental distribution, rather than AppGallery store signing. See the bundled guide for the profile expiry date.
+Required component sources and licences are distributed. Full application source snapshots stay local; the application remains proprietary.
+
 **iOS**: not available yet.
 
 ### Verify your download
@@ -182,7 +196,7 @@ The application and independent USB engine remain proprietary. The archive exclu
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | fnOS Music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Audiobookshelf | ✅ audiobooks + podcasts | 🚧 audiobooks (audiobook mode); no podcasts | 🚧 same | 🚧 same | 🚧 same | 🚧 same |
+| Audiobookshelf | ✅ audiobooks + podcasts | ✅ audiobooks + podcasts | ✅ same | ✅ same | ✅ same | ✅ same |
 | WebDAV, SMB (with LAN discovery), Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Huawei Drive | ✅ | — | — | — | — | — |
 | Multiple servers, address auto-switch, library sync (incl. incremental sync) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |

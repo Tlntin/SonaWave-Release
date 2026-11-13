@@ -6,7 +6,7 @@
 
 连接你自己的音乐库：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、Audiobookshelf、WebDAV、SMB、百度网盘与本地文件。
 
-Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · HarmonyOS
+Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · HarmonyOS · OpenHarmony PC（实验性支持）
 
 简体中文 | [English](README.en.md)
 
@@ -63,16 +63,15 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 - **其它版本（站外 Android、Windows、macOS、Linux）**：通过邮件接收正式版更新通知；先登录应用账号并绑定已验证邮箱。
 - 通知默认关闭，可随时在应用内关闭；邮件也提供退订入口。Google Play 版目前不提供此订阅入口，请通过 Google Play 获取更新。
 
-### 0.5.3 更新
+### 0.6.5 更新
 
-- 改进本地、WebDAV、SMB、百度网盘及飞牛 CUE 的实验性会员无缝播放、分轨拖动与任务清理。
-- 新增竖屏沉浸详情、首页歌单快捷播放与可选目录图片兜底。
-- 经典与唱片封面大小可分别调整，唱臂与黑胶显示独立控制。
-- 修复 Emby/Jellyfin 歌手页、收藏、搜索、最近/常听及统计历史中的默认封面或空白问题。
-- 修复 Android 自动切歌时短暂状态变化可能撤下后台前台服务的问题，增加会话与退出原因日志；修复 Windows 更新后退出崩溃。
-- 包含站外 Android、Windows、Linux 与 macOS；Google Play 另行提交。
+- 新增 OpenHarmony PC x86_64 安装包，实验性支持 OpenHarmony + HarmonyOS，仅鸿蒙 6.1.0+ 可用。
+- 新增多流派浏览、搜索和编辑；Emby / Jellyfin 可选横屏歌手背景，改进专辑展示、排序与随机分页。
+- Audiobookshelf 增加播客、单集进度和可续传同步，绿联支持保持登录。
+- 优化封面加载、平板文件夹和唱臂状态，修复通知封面与会员状态刷新，增加 QQ 交流入口。
+- 华为鸿蒙继续通过应用市场获取原生版，不另发华为 PC 包；Google Play AAB 另行提交。
 
-[阅读完整更新说明](https://music.http5.cn/docs/releases/flutter-0.5.3.html) · [0.5.3 安装包](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.5.3)
+[阅读完整更新说明及下载 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 
 直通默认关闭，实际支持取决于设备、驱动与编码；Windows DoP 建议使用完整版，Android HDMI 暂不支持 DSD 直通。无缝播放与 USB 独占保留既有实验性及格式限制，DST 压缩 DSD 使用 PCM。
 
@@ -135,6 +134,21 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 
 打开 DMG，把 SonaWave 拖进「应用程序」。macOS 是首个版本，还没在多少真机上验证过：功能和 Linux 版基本相同，但暂时没有桌面歌词、菜单栏图标、系统「正在播放」和媒体键，遇到问题欢迎提 Issue。
 
+**OpenHarmony PC（x86_64，实验性支持）**
+
+支持 **OpenHarmony + HarmonyOS，仅鸿蒙 6.1.0+ 可用**。**已在鸿蒙 PC 上验证通过；深开鸿 PC 大部分功能验证通过，少部分功能暂未通过。**
+本次只提供 OpenHarmony PC 包；华为鸿蒙继续使用已上架的原生版，不另外发布华为 PC 包。当前不提供 ARM64 鸿蒙包。
+
+| 文件 | 说明 |
+|---|---|
+| `SonaWave-<版本>-openharmony-x86_64-signed.hap` | 普通用户安装此预签名包，沿用系统验签 |
+| `…-openharmony-x86_64-unsigned.hap` | 仅供具备设备签名条件的开发者重签 |
+| `…-openharmony-x86_64-README.md` | 安装说明、验证范围与已知限制 |
+
+深开鸿 PC 的托盘、系统桌面歌词和公共下载目录仍有兼容性限制；实体外设与长期稳定性仍需继续验证。
+使用保留的 OpenHarmony SDK 测试签名进行实验性分发，不代表华为商店发行签名；Profile 有效期见随版说明。
+公开附件提供必要的组件对应源码和许可证，完整应用源码快照仅本地保存，应用主体继续保持闭源。
+
 **iOS**：暂未提供。
 
 ### 校验
@@ -182,7 +196,7 @@ Android 使用 mpv、FFmpeg 等音频开源组件。`android-audio-components-so
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic、Emby、Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 飞牛音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Audiobookshelf | ✅ 有声书 + 播客 | 🚧 有声书（听书模式），不支持播客 | 🚧 同左 | 🚧 同左 | 🚧 同左 | 🚧 同左 |
+| Audiobookshelf | ✅ 有声书 + 播客 | ✅ 有声书 + 播客 | ✅ 同左 | ✅ 同左 | ✅ 同左 | ✅ 同左 |
 | WebDAV、SMB（含局域网发现）、百度网盘、本地音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 华为云空间 | ✅ | — | — | — | — | — |
 | 多服务器、多地址自动切换、曲库同步到本机（含增量同步） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
