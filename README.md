@@ -65,11 +65,11 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 
 ### 0.6.5 更新
 
-- 新增 OpenHarmony PC x86_64 安装包，实验性支持 OpenHarmony / HarmonyOS 6.1.0+ 的 x86_64 环境，暂不支持华为 ARM64 鸿蒙 PC。
+- 新增 OpenHarmony PC x86_64 安装包，实验性支持 OpenHarmony / HarmonyOS 6.1.0+ 的 x86_64 环境。
 - 新增多流派浏览、搜索和编辑；Emby / Jellyfin 可选横屏歌手背景，改进专辑展示、排序与随机分页。
 - Audiobookshelf 增加播客、单集进度和可续传同步，绿联支持保持登录。
 - 优化封面加载、平板文件夹和唱臂状态，修复通知封面与会员状态刷新，增加 QQ 交流入口。
-- 华为鸿蒙继续通过应用市场获取原生版，不另发华为 PC 包；Google Play AAB 另行提交。
+- Google Play AAB 另行提交。
 
 [阅读完整更新说明及下载 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 
@@ -137,7 +137,6 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 **OpenHarmony PC（x86_64，实验性支持）**
 
 实验性支持 **OpenHarmony / HarmonyOS 6.1.0+ 的 x86_64 环境**。**已在鸿蒙 PC x86_64 模拟器验证；深开鸿 PC x86_64 虚拟机大部分功能通过、少部分未通过。**
-本次只提供 OpenHarmony PC x86_64 包，**暂不支持华为 ARM64 鸿蒙 PC**。华为鸿蒙请继续使用已上架的原生版，不另外发布华为 PC 包。
 
 | 文件 | 说明 |
 |---|---|

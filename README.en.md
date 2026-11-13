@@ -65,11 +65,11 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 
 ### What's new in 0.6.5
 
-- Add an OpenHarmony PC x86_64 package for OpenHarmony / HarmonyOS 6.1.0+ x86_64 environments, with experimental support. Huawei ARM64 HarmonyOS PCs are not supported by this package.
+- Add an OpenHarmony PC x86_64 package for OpenHarmony / HarmonyOS 6.1.0+ x86_64 environments, with experimental support.
 - Browse, search and edit multiple genres. Add optional Emby / Jellyfin landscape artist backdrops and improve album display, sorting and random pagination.
 - Add Audiobookshelf podcasts, episode progress and resumable sync, and persistent UGREEN sign-in.
 - Improve cover loading, tablet folders and tonearm behavior. Fix notification artwork and membership refresh, and add a QQ community entry.
-- Get the native Huawei HarmonyOS app from AppGallery; no separate Huawei PC package is distributed. Google Play AAB submission is separate.
+- Google Play AAB submission is separate.
 
 [Read the full update and download 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
 
@@ -137,7 +137,6 @@ Open the DMG and drag SonaWave into Applications. This is the first macOS releas
 **OpenHarmony PC (x86_64, experimental support)**
 
 Experimental support for **OpenHarmony / HarmonyOS 6.1.0+ x86_64 environments**. **Validated in a HarmonyOS PC x86_64 emulator. Most features pass in a Kaihong PC x86_64 VM; a small number do not yet pass.**
-This release includes only the OpenHarmony PC x86_64 package. **Huawei ARM64 HarmonyOS PCs are not supported by this package.** Huawei HarmonyOS users should continue using the native AppGallery app; no separate Huawei PC package is distributed.
 
 | File | Notes |
 |---|---|
