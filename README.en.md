@@ -4,7 +4,9 @@
 
 # SonaWave
 
-A music player for the library you already own: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf, WebDAV, SMB, Baidu Netdisk and local files.
+Connect to up to **12 sources** (HarmonyOS): Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, UGREEN Music, Audiobookshelf, WebDAV, SMB, Huawei Cloud Drive, Baidu Netdisk and local files.
+
+HarmonyOS supports all 12 sources; Android / Windows / Linux support 11 (excluding Huawei Cloud Drive), and macOS supports 10 (also excluding SMB).
 
 Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS · OpenHarmony PC (experimental support)
 
@@ -18,14 +20,14 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS ·
 
 ## Screenshots
 
-**Desktop**
+**Cross-platform app · Desktop**
 
 <p align="center">
   <img src="screenshots/zh/pc-home.jpg" alt="Desktop home" width="49%">
   <img src="screenshots/zh/pc-player.jpg" alt="Desktop player" width="49%">
 </p>
 
-**Phone**
+**Cross-platform app · Phone**
 
 <p align="center">
   <img src="screenshots/zh/phone-home.jpg" alt="Phone home" width="24%">
@@ -34,11 +36,24 @@ Android (phone / tablet / TV / car) · Windows · macOS · Linux · HarmonyOS ·
   <img src="screenshots/zh/phone-mine.jpg" alt="Phone Me tab" width="24%">
 </p>
 
-**Tablet / TV**
+**Cross-platform app · Tablet / TV**
 
 <p align="center">
   <img src="screenshots/zh/tablet-home.jpg" alt="Tablet home" width="49%">
   <img src="screenshots/zh/tv-home.jpg" alt="TV home" width="49%">
+</p>
+
+**HarmonyOS · 12 sources and landscape playback**
+
+The source poster lists all 12 HarmonyOS sources. The player screenshots are from the HarmonyOS 1.7.25 invitation-test build and show immersive covers and the large-cover landscape style (Simplified Chinese UI). Huawei Cloud Drive is HarmonyOS-only; source counts for other platforms are listed above.
+
+<p align="center">
+  <img src="screenshots/en/sources-12.jpg" alt="12 sources supported on HarmonyOS" width="49%">
+  <img src="screenshots/harmony/tablet-immersive.jpg" alt="HarmonyOS immersive landscape player" width="49%">
+</p>
+<p align="center">
+  <img src="screenshots/harmony/tablet-large-cover.jpg" alt="HarmonyOS large-cover landscape player" width="49%">
+  <img src="screenshots/harmony/pc-immersive.jpg" alt="HarmonyOS immersive desktop player" width="49%">
 </p>
 
 ## Download
@@ -180,7 +195,7 @@ The application and independent USB engine remain proprietary. The archive exclu
 
 ## Features
 
-- **Many sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, Audiobookshelf (audiobooks), WebDAV, SMB, Baidu Netdisk and local folders, with multiple sources at once
+- **Up to 12 sources**: Navidrome / Subsonic, Emby, Jellyfin, fnOS Music, UGREEN Music, Audiobookshelf (audiobooks), WebDAV, SMB, Baidu Netdisk, local folders and Huawei Cloud Drive (HarmonyOS only), with multiple sources at once
 - **Playback**: lossless and CUE sheets, DSD (dsf / dff) on Android and Windows Full; equalizer; Android USB / Windows WASAPI exclusive output; play while caching and offline downloads
 - **Lyrics**: synced and word-by-word lyrics, translation; desktop lyrics on PC
 - **Discovery**: recommendations based on what you like, search suggestions, listening stats; internet radio
@@ -196,8 +211,10 @@ The application and independent USB engine remain proprietary. The archive exclu
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic, Emby, Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | fnOS Music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| UGREEN Music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Audiobookshelf | ✅ audiobooks + podcasts | ✅ audiobooks + podcasts | ✅ same | ✅ same | ✅ same | ✅ same |
-| WebDAV, SMB (with LAN discovery), Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| WebDAV, Baidu Netdisk, local music | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMB (with LAN discovery) | ✅ | ✅ | ✅ | ✅ | — | ✅ |
 | Huawei Drive | ✅ | — | — | — | — | — |
 | Multiple servers, address auto-switch, library sync (incl. incremental sync) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Switching servers saves progress and resumes when you switch back | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |

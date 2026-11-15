@@ -4,7 +4,9 @@
 
 # 听澜盒
 
-连接你自己的音乐库：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、Audiobookshelf、WebDAV、SMB、百度网盘与本地文件。
+最多连接 **12 种音源**（鸿蒙版）：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、绿联音乐、Audiobookshelf、WebDAV、SMB、华为云空间、百度网盘与本地文件。
+
+鸿蒙版支持全部 12 种；安卓 / Windows / Linux 版支持 11 种（不含华为云空间），macOS 版支持 10 种（另不含 SMB）。
 
 Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · HarmonyOS · OpenHarmony PC（实验性支持）
 
@@ -18,14 +20,14 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
 
 ## 截图
 
-**电脑**
+**跨平台版 · 电脑**
 
 <p align="center">
   <img src="screenshots/zh/pc-home.jpg" alt="电脑 首页" width="49%">
   <img src="screenshots/zh/pc-player.jpg" alt="电脑 播放页" width="49%">
 </p>
 
-**手机**
+**跨平台版 · 手机**
 
 <p align="center">
   <img src="screenshots/zh/phone-home.jpg" alt="手机 首页" width="24%">
@@ -34,11 +36,24 @@ Android（手机 / 平板 / 电视 / 车机）· Windows · macOS · Linux · Ha
   <img src="screenshots/zh/phone-mine.jpg" alt="手机 我的" width="24%">
 </p>
 
-**平板 / 电视**
+**跨平台版 · 平板 / 电视**
 
 <p align="center">
   <img src="screenshots/zh/tablet-home.jpg" alt="平板 首页" width="49%">
   <img src="screenshots/zh/tv-home.jpg" alt="电视 首页" width="49%">
+</p>
+
+**鸿蒙版 · 12 种音源与横屏播放**
+
+音源海报展示鸿蒙版全部 12 种音源；播放页实拍来自鸿蒙 1.7.25 邀请测试版，展示沉浸封面与横屏大封面样式。华为云空间仅鸿蒙版支持，其他平台的音源数量见上方说明。
+
+<p align="center">
+  <img src="screenshots/zh/sources-12.jpg" alt="鸿蒙版支持的 12 种音源" width="49%">
+  <img src="screenshots/harmony/tablet-immersive.jpg" alt="鸿蒙横屏沉浸封面播放页" width="49%">
+</p>
+<p align="center">
+  <img src="screenshots/harmony/tablet-large-cover.jpg" alt="鸿蒙横屏大封面播放页" width="49%">
+  <img src="screenshots/harmony/pc-immersive.jpg" alt="鸿蒙电脑沉浸封面播放页" width="49%">
 </p>
 
 ## 下载
@@ -180,7 +195,7 @@ Android 使用 mpv、FFmpeg 等音频开源组件。`android-audio-components-so
 
 ## 功能
 
-- **多种音源**：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、Audiobookshelf（有声书）、WebDAV、SMB、百度网盘、本机文件夹，可同时添加多个
+- **最多 12 种音源**：Navidrome / Subsonic、Emby、Jellyfin、飞牛音乐、绿联音乐、Audiobookshelf（有声书）、WebDAV、SMB、百度网盘、本机文件夹与华为云空间（仅鸿蒙），可同时添加多个
 - **播放**：无损、CUE 分轨，Android 与 Windows 完整版支持 DSD（dsf / dff）；均衡器；Android USB / Windows WASAPI 独占输出；边下边播与离线下载
 - **歌词**：同步歌词、逐字歌词、歌词翻译；电脑桌面歌词
 - **发现**：按你的喜欢推荐、搜索联想、听歌统计；网络电台
@@ -196,8 +211,10 @@ Android 使用 mpv、FFmpeg 等音频开源组件。`android-audio-components-so
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Navidrome / Subsonic、Emby、Jellyfin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 飞牛音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 绿联音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Audiobookshelf | ✅ 有声书 + 播客 | ✅ 有声书 + 播客 | ✅ 同左 | ✅ 同左 | ✅ 同左 | ✅ 同左 |
-| WebDAV、SMB（含局域网发现）、百度网盘、本地音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| WebDAV、百度网盘、本地音乐 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMB（含局域网发现） | ✅ | ✅ | ✅ | ✅ | — | ✅ |
 | 华为云空间 | ✅ | — | — | — | — | — |
 | 多服务器、多地址自动切换、曲库同步到本机（含增量同步） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 切换服务器时保存进度、切回来接着播 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
