@@ -78,16 +78,15 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 - **其它版本（站外 Android、Windows、macOS、Linux）**：通过邮件接收正式版更新通知；先登录应用账号并绑定已验证邮箱。
 - 通知默认关闭，可随时在应用内关闭；邮件也提供退订入口。Google Play 版目前不提供此订阅入口，请通过 Google Play 获取更新。
 
-### 0.6.5 更新
+### 0.6.6 更新
 
-- 新增 OpenHarmony PC x86_64 安装包，实验性支持 OpenHarmony / HarmonyOS 6.1.0+ 的 x86_64 环境。
-- 新增多流派浏览、搜索和编辑；Emby / Jellyfin 可选横屏歌手背景，改进专辑展示、排序与随机分页。
-- Audiobookshelf 增加播客、单集进度和可续传同步，绿联支持保持登录。
-- 优化封面加载、平板文件夹和唱臂状态，修复通知封面与会员状态刷新，增加 QQ 交流入口。
+- 横屏播放新增大封面、平板和 PC 三种样式；手机和平板可一键横屏，返回时恢复原方向。
+- 横屏和电脑播放页支持沉浸封面，可直接调整封面样式和大小。
+- 竖屏歌词、大封面、PC 和 TV 可分别设置播控空闲自动隐藏，轻点空白、移动鼠标或按遥控器即可唤出。
+- 修复部分歌词署名显示为 JSON，改善窄窗口听书播控及桌面、平板歌曲列表操作。
 - Google Play AAB 另行提交。
-- 玲珑 UAB 本版暂缓：本轮曾遇上游依赖源 502 和打包失败，后续单独处理。
 
-[阅读完整更新说明及下载 0.6.5](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.5)
+[阅读完整更新说明及下载 0.6.6](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.6)
 
 直通默认关闭，实际支持取决于设备、驱动与编码；Windows DoP 建议使用完整版，Android HDMI 暂不支持 DSD 直通。无缝播放与 USB 独占保留既有实验性及格式限制，DST 压缩 DSD 使用 PCM。
 
