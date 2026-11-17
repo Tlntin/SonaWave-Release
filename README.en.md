@@ -78,15 +78,15 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 - **Other editions (Android outside Google Play, Windows, macOS and Linux)**: receive stable-release updates by email. Sign in to your app account and link a verified email address first.
 - Notifications are off by default. You can turn them off in the app or unsubscribe using the email link. The Google Play edition currently has no subscription entry; get updates through Google Play.
 
-### What's new in 0.6.6
+### What's new in 0.6.7
 
-- Choose large artwork, tablet or PC layouts in the landscape player. Rotate phone and tablet players with one tap and restore their orientation when returning.
-- Use immersive artwork in landscape and desktop players, with cover style and size controls available directly from the player.
-- Set idle controls independently for portrait lyrics, large artwork, PC and TV. Reveal them with a blank-space tap, mouse movement or the TV remote.
-- Fix lyric credits displayed as JSON, and improve audiobook controls in narrow windows and song list actions on desktop and tablets.
+- Choose local-first, online or merged data separately for search, suggestions, album and artist details, and playlist matching.
+- Keep home recommendations visible while new artwork is prepared, with bounded waits when images are slow.
+- Improve short TV layouts and automatic fallback for square windows, retaining left playback controls and a single header row.
+- Improve audiobook shelf startup, library synchronization, TV update dialogs and diagnostic logs.
 - Google Play AAB submission is separate.
 
-[Read the full update and download 0.6.6](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.6)
+[Read the full update and download 0.6.7](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.7)
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
