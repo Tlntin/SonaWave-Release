@@ -78,15 +78,16 @@ Google Play 封闭测试仅向已获邀的 Google 账号开放；请先打开「
 - **其它版本（站外 Android、Windows、macOS、Linux）**：通过邮件接收正式版更新通知；先登录应用账号并绑定已验证邮箱。
 - 通知默认关闭，可随时在应用内关闭；邮件也提供退订入口。Google Play 版目前不提供此订阅入口，请通过 Google Play 获取更新。
 
-### 0.6.7 更新
+### 0.6.8 更新
 
-- 新增高级搜索数据源设置，搜索、联想、专辑详情、歌手详情和歌单匹配可分别选择本地优先、在线或合并读取。
-- 优化首页封面准备，刷新推荐时保留当前内容，图片较慢时仍可继续浏览。
-- 优化 TV 矮宽屏布局和方形窗口自动回退，保留左侧播控与单行顶栏。
-- 优化听书书架启动、曲库同步、TV 更新弹窗和调试日志。
+- 新增扫码恢复配置，可从原设备迁移服务器和设置。
+- 优化首页与曲库封面的加载和复用，以及封面手势和横屏播控。
+- 优化 Audiobookshelf 播客排序记忆和续播，以及曲库刷新和服务器切换。
+- 飞牛音乐搜索可加载更多结果，逐字歌词和音乐文件内嵌歌词兼容性更好。
+- Linux 提供 DEB 和 AppImage。deepin 构建依赖下载返回 HTTP 404，本版跳过玲珑 UAB。
 - Google Play AAB 另行提交。
 
-[阅读完整更新说明及下载 0.6.7](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.7)
+[阅读完整更新说明及下载 0.6.8](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.8)
 
 直通默认关闭，实际支持取决于设备、驱动与编码；Windows DoP 建议使用完整版，Android HDMI 暂不支持 DSD 直通。无缝播放与 USB 独占保留既有实验性及格式限制，DST 压缩 DSD 使用 PCM。
 

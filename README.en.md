@@ -78,15 +78,16 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 - **Other editions (Android outside Google Play, Windows, macOS and Linux)**: receive stable-release updates by email. Sign in to your app account and link a verified email address first.
 - Notifications are off by default. You can turn them off in the app or unsubscribe using the email link. The Google Play edition currently has no subscription entry; get updates through Google Play.
 
-### What's new in 0.6.7
+### What's new in 0.6.8
 
-- Choose local-first, online or merged data separately for search, suggestions, album and artist details, and playlist matching.
-- Keep home recommendations visible while new artwork is prepared, with bounded waits when images are slow.
-- Improve short TV layouts and automatic fallback for square windows, retaining left playback controls and a single header row.
-- Improve audiobook shelf startup, library synchronization, TV update dialogs and diagnostic logs.
+- Restore servers and settings from your original device via QR code.
+- Improve artwork loading and reuse, player artwork gestures, and landscape controls.
+- Improve Audiobookshelf podcast sorting and resume, library refreshes, and server switching.
+- Load more fnOS Music search results and improve support for word-by-word and embedded lyrics.
+- Linux DEB and AppImage downloads are available. This release skips the Linyaps UAB after a deepin build dependency returned HTTP 404.
 - Google Play AAB submission is separate.
 
-[Read the full update and download 0.6.7](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.7)
+[Read the full update and download 0.6.8](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.8)
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
 
