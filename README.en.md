@@ -78,14 +78,13 @@ In the app, open **Me → Settings → About → Receive update notifications** 
 - **Other editions (Android outside Google Play, Windows, macOS and Linux)**: receive stable-release updates by email. Sign in to your app account and link a verified email address first.
 - Notifications are off by default. You can turn them off in the app or unsubscribe using the email link. The Google Play edition currently has no subscription entry; get updates through Google Play.
 
-### What's new in 0.6.9
+### What's new in 0.6.10
 
-- Highlight wrapped lyrics in singing order, display backing vocals separately, and follow playback with a gentle bounce.
-- Open Home and Favorites more smoothly and prioritize visible carousel artwork.
-- Improve UGREEN library sync and recover more missing covers in Favorites and detail pages.
-- Linux downloads are available as DEB and AppImage. The regular release no longer includes Linyaps UAB after repeated upstream dependency download failures.
+- Choose a download folder on Android phones and tablets. Scan it to restore your download list and keep the files in place.
+- Hover to see the full download path on desktop, or tap the folder setting to view and copy it on Android.
+- Preview player appearance changes as you make them, and enjoy smoother portrait transitions between the player and lyrics.
 
-[Read the full update and download 0.6.9](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.9)
+[Read the full update and download 0.6.10](https://github.com/Tlntin/SonaWave-Release/releases/tag/v0.6.10)
 
 
 Passthrough is off by default and depends on the device, driver and codec. Use the full Windows build for DoP; Android HDMI does not currently pass through DSD. Gapless playback and USB output retain their existing experimental and format limits; compressed DST uses PCM.
